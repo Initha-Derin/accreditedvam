@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accredited Investors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      var recaptcha_response = "";
+
+      function submitUserForm() {
+        if (recaptcha_response.length == 0) {
+          document.getElementById("status").innerHTML =
+            '<span style="color:red;">Please complete the reCAPTCHA!</span>';
+          return false;
+        }
+        return true;
+      }
+
+      function verifyCaptcha(token) {
+        recaptcha_response = token;
+        document.getElementById("Capcha-error").innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- <div class="header-div">
+        <div class="logo-div"> -->
+        <img class="logo-header-img" src="./images/logo-header.svg" />
+        <!-- </div>
+      </div> -->
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="steps-page-div">
+          <img
+            class="steps-img"
+            src="./images/steps.jpg"
+            alt="steps background image"
+          />
+          <div class="container">
+            <div class="text-over-steps_outer">
+              <div class="text-over-steps">
+                <h4 class="fw-400">
+                  The untapped treasure of India's<br />corporate bond market.
+                </h4>
+                <h1 class="fw-800">
+                  Take the First<br />Step Towards<br />AIF Investing for as<br />little
+                  as Rs.10 Lakhs.
+                </h1>
+                <h3 class="fw-500">
+                  Become an Accredited Investor<br />through Vivriti AMC today!
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div id="form1" method="POST">
+          <form>
+            <input type="text" placeholder="Name*" required />
+            <input type="tel" placeholder="Phone Number*" required />
+            <input type="email" placeholder="Email*" required />
+            <input type="text" placeholder="City*" required />
+
+            <!--Google reCAPTCHA-->
+            <div
+              class="g-recaptcha"
+              data-siteKey="6Ldh0doqAAAAAJMLblpntkXlRG4Qe4UVj1hMh0Ts"
+            ></div>
+            <br />
+            <button id="sbt-button" type="submit">START NOW</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="who-section">
+        <div class="container">
+          <div class="who">
+            <h2 id="line-one">Who are Accredited Investors?​</h2>
+            <p id="line-two">
+              SEBI has approved the framework for Accredited Investors(AI) for
+              the Indian securities market in 2021 with an aim to create lighter
+              regulations for a class of investors,who are equipped with good
+              industry knowledge.
+            </p>
+            <p id="line-three">
+              In the AI framework, you can invest with ticket sizes that are
+              lower than the stipulated minimum amount in AIFs. Hence, if you
+              are an independent investor, own a business, or are part of a
+              family trust/Hindu Undivided Family and meet the Eligibility
+              Criteria mentioned below, we will help you secure your AI
+              certificate from a SEBI-recognized agency, andfurther let you
+              invest in AIFs with ticket size starting as low as few lakhs of
+              rupees.
+            </p>
+            <h2 id="line-four">
+              Are you eligible to be an Accredited Investor?
+            </h2>
+            <p id="line-five">
+              If you are an independent investor, own a business, or are part of
+              a family trust/Hindu Undivided Family and meet the Eligibility
+              Criteria, you can get accredited and start your investment journey
+              with AIFs today. Vivriti AMC can help you secure an Accredited
+              Investor Certification from a SEBI-recognized agency.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="criteria-section">
+        <div class="criteria-page-div">
+          <div class="container">
+            <h2 class="criteria-title">Eligibility Criteria</h2>
+            <div class="criteria-div">
+              <div class="criteria-box">
+                <h3>CRITERIA 1</h3>
+                <img src="./images/hand-img.png" alt="hand image" />
+                <p id="a">
+                  Annual Income equal to or greater than INR 2 crores.
+                </p>
+              </div>
+              <div class="criteria-box">
+                <h3>CRITERIA 2</h3>
+                <img src="./images/graph-img.png" alt="graph image" />
+                <p>
+                  Net Worth (NW) equal to or greater than INR 7.5 crores (min
+                  INR 3.75 crores in the form of financial assets).
+                </p>
+              </div>
+              <div class="criteria-box">
+                <h3>CRITERIA 3</h3>
+                <img src="./images/dollar-img.png" alt="dollar image" />
+                <p>
+                  Annual income of at least INR 1 crore and NW of at least INR 5
+                  crores (min INR 2.5 crores in the form of financial assets).
+                </p>
+              </div>
+            </div>
+
+            <div class="criteria-para-div">
+              <p class="note">
+                *Value of the primary residence of the individual, karta of HUF
+                and the scope proprietor, respectively, shall not be considered
+                for NW calculation.
+              </p>
+
+              <p class="disclaimer">
+                Note: If investments are jointly held and the holders are parent
+                and children at least one member must fulfil the eligibility
+                criteria to qualify as Accredited Investors. If the joint
+                holders are spouses their combined income/net worth will be
+                considered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certification-section">
+        <div class="certification-page-div">
+          <div class="container">
+            <div class="certificate-one-div">
+              <h2>Accredited Investor Certification</h2>
+              <p>
+                We will help you get an Accredited Investors
+                certificate from Accreditation Agencies* like
+              </p>
+            </div>
+            <div class="certificate-two-div">
+              <div class="agencies-div">
+                <img id="img1" src="./images/BSE-img.png" />
+                <p id="para-1">
+                  BSE Administration&Supervision Ltd <br />
+                  (Wholly owned subsidiary of BSE Ltd)
+                </p>
+              </div>
+              <div class="agencies-div">
+                <img id="img2" src="./images/CSDL-img.png" />
+                <p id="para-2">
+                  CDSL Ventures Limited<br />
+                  (Wholly owned subsidairy of CDSL)
+                </p>
+              </div>
+              <div class="agencies-div">
+                <img id = "img3" src="./images/NSDL-img.png"">
+                <p id="para-3">
+                  NSDL Database Management Ltd<br />
+                  (Wholly) owned subsidiary of NSDL)
+                </p>
+              </div>
+            </div>
+            <div class="title-certificate">
+              <h2>The ACCREDITED INVESTOR certificate will contain</h2>
+            </div>
+            <div class="certificate-three-div">
+              <div class="certificate-img-div">
+                <img src="./images/VAM-LOGO-butterfly-img.png" />
+              </div>
+
+              <div class="certificate-img-div">
+                <!-- <img src="./images/GroupCertificate1-bg-img.png" /> -->
+                <div class="list-div">
+                  <ul>
+                    <li>
+                      <strong
+                        ><strong
+                          ><strong
+                            ><strong
+                              >A unique accreditation<br />number.<br /><br /></strong></strong></strong
+                      ></strong>
+                    </li>
+                    <li>
+                      <strong
+                        ><strong
+                          ><strong
+                            ><strong
+                              >Name of the accreditation<br />agency.<br /><br /></strong></strong></strong
+                      ></strong>
+                    </li>
+                    <li>
+                      <strong
+                        ><strong
+                          ><strong
+                            ><strong
+                              >Your PAN number.<br /><br /></strong></strong></strong
+                      ></strong>
+                    </li>
+                    <li><strong>Validity of accreditation**</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form2-section">
+        <div class="form2-page-div">
+          <div class="container">
+            <div class="paragrah-div">
+              <p>
+                *As per the SEBI circular issued on Dec 18, 2023, Accreditation
+                agencies would grant accreditation solely based on the Know Your
+                Customer (KYC) documents and financial information of the
+                applicants
+              </p>
+              <p>
+                **(i) The validity will be 2 years from the date of issuance if
+                the meets the eligibility criteria for preceding one financial
+                year.
+              </p>
+              <p>
+                (ii) The validity will be 3 years from the date of issuance if
+                the applicant meets the eligibility criteria in each of the
+                preceding 2 financial years.
+              </p>
+              <p>
+                (iii) The validity will be 2 years from the date of issuance in
+                case of a newly incorporated entity, which does not have
+                financial information for the preceding financial year but meets
+                theapplicable net-worth criteria as on the date of application.
+              </p>
+            </div>
+            <div class="form2-div">
+              <h2>Become an Accredited Investor Today</h2>
+              <form id="form2" method="post">
+                <input type="text" placeholder="Name*" required />
+                <input type="tel" placeholder="Phone Number*" required />
+                <input type="email" placeholder="Email*" required />
+                <input type="text" placeholder="City*" required />
+
+                <!--Google reCAPTCHA-->
+                <div
+                  class="g-recaptcha"
+                  data-siteKey="6Ldh0doqAAAAAJMLblpntkXlRG4Qe4UVj1hMh0Ts"
+                ></div>
+                <br />
+                <button id="sbt-button" type="submit">START NOW</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
