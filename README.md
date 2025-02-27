@@ -1,2 +1,2 @@
-# Accredited-Page-VAM
+# accreditedvam
 VAM Accredited Page
