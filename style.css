@@ -206,7 +206,7 @@ input[type="text"], input[type="tel"], input[type="email"]{
     opacity: .75;
   }
   
-  @media screen and (max-width: 991px) {
+  /* @media screen and (max-width: 991px) {
     #sbt-button {
       font-size: 15px;
       height: 50px;
@@ -215,7 +215,7 @@ input[type="text"], input[type="tel"], input[type="email"]{
     #sbt-button span {
       line-height: 50px;
     }
-  }
+  } */
 
   .who{
     /* width: 1167.530px;
@@ -479,6 +479,7 @@ input[type="text"], input[type="tel"], input[type="email"]{
   text-transform: uppercase;
   margin: 0px 61.6667px;
   padding: 60px 0px 50px;
+  text-align: center;
 }
 
 .form2-page-div{
@@ -635,7 +636,6 @@ input[type="text"], input[type="tel"], input[type="email"]{
 
   .title-certificate h2 {
     margin: 0px;
-    text-align: center;
   }
 
   .certificate-three-div {
@@ -695,18 +695,17 @@ input[type="text"], input[type="tel"], input[type="email"]{
 @media (min-width: 481px) and (max-width:1024px){
 
   .container{
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0px;
-    overflow: hidden;
   }
 
   .text-over-steps {
     position:absolute;
       left: 0%;
-      width: 60%; /* Adjust width as needed */
+      width: 80%; /* Adjust width as needed */
       color: white; /* White text for visibility */ 
       border-radius: 0px;
       bottom: 0px;
@@ -745,6 +744,32 @@ input[type="text"], input[type="tel"], input[type="email"]{
     word-spacing: 2px;
     padding-bottom: 25px !important
   }
+
+  #form1 {
+    width: 100%;
+  }
+
+  input[type="text"], 
+  input[type="tel"], 
+  input[type="email"] {
+      width: 35%;
+  }
+
+  .g-recaptcha{
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+
+  .certificate-two-div{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .certificate-two-div p{
+    font-size: 15px;
+}
+
+}
 
 }
 
