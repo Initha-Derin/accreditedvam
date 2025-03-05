@@ -525,11 +525,13 @@ input[type="text"], input[type="tel"], input[type="email"]{
   padding-bottom: 126px;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (max-width: 480px){
   
   .container{
-    width: 320px;
+    width: calc(100% - 60px);
     margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .text-over-steps_outer{
@@ -609,11 +611,17 @@ input[type="text"], input[type="tel"], input[type="email"]{
     align-items: center;
   }
 
+  .criteria-para-div {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
   .criteria-box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 100%;
+    padding-bottom: 30px;
   }
 
   .certificate-one-div h2{
@@ -661,7 +669,82 @@ input[type="text"], input[type="tel"], input[type="email"]{
 
   .paragrah-div p:nth-child(4) {
     padding-bottom: 60px;
-}
+  }
+
+  .who {
+    padding-top: 50px;
+  }
+
+  #line-two {
+    padding-bottom: 45px;
+  }
+
+  .criteria-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .g-recaptcha{
+    transform: scale(0.8);
+    transform-origin: center;
+  }
 }
 
+
+@media (min-width: 481px) and (max-width:1024px){
+
+  .container{
+    width: calc(100% - 40px);
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  .text-over-steps {
+    position:absolute;
+      left: 0%;
+      width: 60%; /* Adjust width as needed */
+      color: white; /* White text for visibility */ 
+      border-radius: 0px;
+      bottom: 0px;
+      padding-bottom: 0px;
+      display: inline;
+  }
+
+  .fw-400{
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 27.2px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px !important;
+  }
+
+  .fw-800{
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 27.2px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px !important;
+  }
+
+  .fw-500{
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 27.2px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 25px !important
+  }
+
+}
 
